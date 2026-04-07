@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Portal - AVJ University</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; display: flex; }
+        
+        /* A simple sidebar menu */
+        .sidebar { width: 200px; background: #1a237e; color: white; height: 100vh; padding: 20px; }
+        
+        .main { flex-grow: 1; padding: 20px; background: #f1f1f1; }
+
+        .stat-box { 
+            background: white; 
+            padding: 20px; 
+            display: inline-block; 
+            width: 200px; 
+            margin-right: 20px; 
+            border-top: 5px solid #c5a059;
+        }
+
+        .sidebar a { color: white; text-decoration: none; display: block; padding: 10px 0; }
+    </style>
+</head>
+<body>
+
+    <div class="sidebar">
+        <h2>AVJ ADMIN</h2>
+        <hr>
+        <a href="#">Dashboard</a>
+        <a href="#">Student List</a>
+        <a href="#">Reports</a>
+        <br>
+        <a href="avj1.html" style="color: #f44336;">Logout</a>
+    </div>
+
+    <div class="main">
+        <h1>Administrative Overview</h1>
+        
+        <div class="stat-box">
+            <h3>New Applications</h3>
+            <p style="font-size: 25px; color: #1a237e;">154</p>
+        </div>
+
+        <div class="stat-box">
+            <h3>Total Students</h3>
+            <p style="font-size: 25px; color: #1a237e;">2,400</p>
+        </div>
+
+        <div style="margin-top: 30px; background: white; padding: 20px;">
+            <h3>Recent Admissions Activity</h3>
+            <ul>
+                <li>Application #902 received for B.Tech</li>
+                <li>New MBA registration confirmed</li>
+                <li>M.Tech document verification pending</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
