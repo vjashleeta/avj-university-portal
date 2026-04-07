@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A V J UNIVERSITY | Excellence in Education</title>
+    <style>
+        :root {
+            --primary-color: #1a237e; /* Deep Indigo */
+            --secondary-color: #c5a059; /* Muted Gold */
+            --accent-color: #f44336; /* Action Red */
+            --bg-light: #f8f9fa;
+            --text-dark: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+        }
+
+        /* Header & Navigation */
+        .top-header {
+            background-color: var(--primary-color);
+            color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .main-img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-bottom: 5px solid var(--secondary-color);
+        }
+
+        /* Layout Container */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Application Banner */
+        .apply-banner {
+            background-color: var(--secondary-color);
+            display: block;
+            text-decoration: none;
+            padding: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .apply-banner h2 {
+            margin: 0;
+            color: var(--white);
+            letter-spacing: 2px;
+        }
+
+        .apply-banner:hover {
+            background-color: #b38f4d;
+        }
+
+        /* Login Sections */
+        .login-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 40px 0;
+        }
+
+        .login-card {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid var(--primary-color);
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="reset"] {
+            background: none;
+            border: 1px solid #ccc;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        /* Content Sections */
+        h2 {
+            color: var(--primary-color);
+            border-left: 5px solid var(--secondary-color);
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+
+        .course-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .course-item {
+            background: white;
+            margin-bottom: 10px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .apply-link {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9em;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #222;
+            color: #ccc;
+            padding: 50px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer h3 { color: var(--white); }
+    </style>
+</head>
+<body>
+
+    <header class="top-header">
+        <h1>A V J UNIVERSITY</h1>
+        <p>Empowering Minds, Shaping Futures</p>
+    </header>
+
+    <img src="img2.jpg" class="main-img" alt="University Campus">
+
+    <a href="apply.html" class="apply-banner">
+        <h2>APPLY FOR ADMISSIONS 2026</h2>
+    </a>
+
+    <div class="container">
+        <div class="login-grid">
+            <div class="login-card">
+                <h3>Student Portal</h3>
+                <form action="student.html">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter ID">
+                    <label>Password</label>
+                    <input type="password" placeholder="••••••••">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+                </form>
+            </div>
+
+            <div class="login-card">
+                <h3>Institution Portal</h3>
+                <form action="institute.html">
+                    <label>Department Code</label>
+                    <input type="text" placeholder="Dept-001">
+                    <label>Access Key</label>
+                    <input type="password" placeholder="••••••••">
+                    <input type="submit" value="Login">
+                    <input type="reset" value="Clear">
+                </form>
+            </div>
+        </div>
+
+        <section>
+            <h2>About Our University</h2>
+            <p>A V J University is a modern institution dedicated to empowering students through quality education, innovation, and technology. Founded with a vision to inspire young minds, our university focuses on building strong academic foundations while encouraging creativity and practical learning.</p>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px;">
+                <div>
+                    <h2>Our Vision</h2>
+                    <p>To become a leading institution in education, recognized for excellence in teaching, innovation, and research. We strive to create a future where students are empowered with knowledge.</p>
+                </div>
+                <div>
+                    <h2>Our Mission</h2>
+                    <p>To provide high-quality education that combines knowledge, innovation, and practical skills. We aim to create a supportive learning environment where students grow intellectually.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Academic Programs</h2>
+            <ul class="course-list">
+                <li class="course-item">
+                    <span><strong>B.Tech</strong> (Bachelor of Technology)</span>
+                    <a href="apply.html" class="apply-link">APPLY NOW →</a>
+                </li>
+                <li class="course-item">
+                    <span><strong>M.Tech</strong> (Master of Technology)</span>
+                    <a href="apply.html" class="apply-link">APPLY NOW →</a>
+                </li>
+                <li class="course-item">
+                    <span><strong>MBA</strong> (Master of Business Administration)</span>
+                    <a href="apply.html" class="apply-link">APPLY NOW →</a>
+                </li>
+            </ul>
+        </section>
+        
+        <div style="text-align: center; margin-top: 30px;">
+            <img src="img5.jpg" style="max-width: 100%; border-radius: 8px;" alt="Campus Life">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3>Contact Admissions</h3>
+        <p>
+            Email: avjuniversity@gmail.com<br>
+            Phone: +91 98282 46821<br>
+            Address: Ernakulam, Kerala, India
+        </p>
+        <hr style="width: 50px; border-color: var(--secondary-color);">
+        <p style="font-size: 0.8em; opacity: 0.7;">&copy; 2007 - 2026 AVJ UNIVERSITY. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
